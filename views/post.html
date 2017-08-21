@@ -1,9 +1,9 @@
 {% extends "default.html" %}
 
 {% block main %}
-  <span class="time">Published <time datetime="{{ date }}">{{ prettyDate }}</time></span>
-  <section>
+  <article>
     <h1>{{ title | safe }}</h1>
+    <span class="time">Published <time datetime="{{ date }}">{{ prettyDate }}</time></span>
     {{ post | safe }}
-  </section>
+  </article>
 {% endblock %}
