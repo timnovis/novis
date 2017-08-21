@@ -4,7 +4,8 @@
   "description": "personal site",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon --watch server.js --watch views --watch posts --watch public --ext js,html,css,md"
+    "start": "node server.js",
+    "dev": "nodemon --watch server.js --watch views --watch posts --watch public --ext js,html,css,md"
   },
   "author": "",
   "license": "ISC",
