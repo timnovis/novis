@@ -1,0 +1,9 @@
+{% extends "default.html" %}
+
+{% block main %}
+  <span class="time">Published <time datetime="{{ date }}">{{ prettyDate }}</time></span>
+  <section>
+    <h1>{{ title | safe }}</h1>
+    {{ post | safe }}
+  </section>
+{% endblock %}

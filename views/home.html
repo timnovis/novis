@@ -1,0 +1,11 @@
+{% extends "default.html" %}
+
+{% block main %}
+  {% for post in postList %}
+    <article>
+      <h2><a href="{{ post.slug }}">{{ post.title }}</a></h2>
+      <span class="time">Published <time datetime="{{ post.date }}">{{ post.prettyDate }}</time></span>
+      {{ post.post | safe }}
+    </article>
+  {% endfor %}
+{% endblock %}
