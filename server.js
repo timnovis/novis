@@ -76,8 +76,7 @@ files.sort((a, b) => {
 
   return getPostDate(a) - getPostDate(b)
 })
-
-files.forEach(post => {
+.forEach(post => {
   // Remove extension from file name for title
   let title = post.replace(/\.[^/.]+$/, '')
 
@@ -88,8 +87,6 @@ files.forEach(post => {
   fs.readFile(Path.join(__dirname, 'posts', post), 'utf8', (err, contents) => {
 
     let publishDate = getPostDate(contents)
-
-    contents = contents.slice(publishDate.length + '[date]'.length + '[enddate]'.length)
 
     // Create postdata object
     let postData = {
