@@ -1,3 +1,4 @@
+[date]2017-08-21[enddate]
 Welcome, I've been thinking.
 
 I needed a place to store my thoughts and record any interesting work I've been doing, and my personal website was in dire need of a refresh.

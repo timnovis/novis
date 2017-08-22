@@ -22,6 +22,14 @@ function slugify(text) {
     .replace(/-+$/, '')
 }
 
+// Get post date from top of markdown file ([date]2017-08-21[enddate])
+function getPostDate(fileContents) {
+  let dateStart = fileContents.indexOf('[date]') + '[date]'.length
+  let dateEnd = fileContents.indexOf('[enddate]')
+
+  return fileContents.substring(dateStart, dateEnd)
+}
+
 server.connection({
   host: process.env.HOST || '0.0.0.0',
   port: process.env.PORT || 8080
@@ -63,7 +71,10 @@ let files = fs.readdirSync(Path.join(__dirname, 'posts'))
 
 // Sort files from newest -> oldest
 files.sort((a, b) => {
-  return fs.statSync(Path.join(__dirname, 'posts', b)).mtime.getTime() - fs.statSync(Path.join(__dirname, 'posts', a)).mtime.getTime()
+  let a1 = fs.readFileSync(Path.join(__dirname, 'posts', a))
+  let b1 = fs.readFileSync(Path.join(__dirname, 'posts', b))
+
+  return getPostDate(a) - getPostDate(b)
 })
 
 files.forEach(post => {
@@ -76,29 +87,29 @@ files.forEach(post => {
   // Read each file
   fs.readFile(Path.join(__dirname, 'posts', post), 'utf8', (err, contents) => {
 
-    // Get file info (date created)
-    fs.stat(Path.join(__dirname, 'posts', post), (err, data) => {
+    let publishDate = getPostDate(contents)
 
-      // Create postdata object
-      let postData = {
-        slug,
-        title,
-        post: marked(contents),
-        date: new Date(data.birthtime).toISOString(),
-        prettyDate: new Date(data.birthtime).toLocaleString('en-gb', { year: 'numeric', month: 'long', day: 'numeric' })
+    contents = contents.slice(publishDate.length + '[date]'.length + '[enddate]'.length)
+
+    // Create postdata object
+    let postData = {
+      slug,
+      title,
+      post: marked(contents),
+      date: new Date(publishDate).toISOString(),
+      prettyDate: new Date(publishDate).toLocaleString('en-gb', { year: 'numeric', month: 'long', day: 'numeric' })
+    }
+    
+    // Push each post into posts array for home route
+    posts.push(postData)
+
+    // Add a static route for each file
+    server.route({
+      method: 'GET',
+      path: slug,
+      handler: function(request, reply) {
+        reply.view('post', postData)
       }
-      
-      // Push each post into posts array for home route
-      posts.push(postData)
-
-      // Add a static route for each file
-      server.route({
-        method: 'GET',
-        path: slug,
-        handler: function(request, reply) {
-          reply.view('post', postData)
-        }
-      })
     })
 
   })
