@@ -9,7 +9,7 @@ I've been listening to some fantastic albums this month, some of which I haven't
 - [Deerhunter - Halcyon Digest](https://open.spotify.com/album/1HUMjB15ARg96KIypcGzYY)
 - [The Knife - Silent Shout](https://open.spotify.com/album/2Anrvckz5UvbyUqi6qlp8S)
 
-I'm especially a fan of The Guardian's Audio Long Reads podcast series, they're a great length and the content is extremely interesting. I especially enjoyed [God in the machine: my strange journey into transhumanism](https://overcast.fm/+G2W0_J8nY), well worth a listen if you're interested in the intersection between computing, philosophy and artificial intelligence.
+I've recently discovered The Guardian's [Audio Long Reads](https://www.theguardian.com/news/series/the-audio-long-read) podcasts, they're a great length and the content is often reallly interesting. Out of the few I've listened to this month, I especially enjoyed [God in the machine: my strange journey into transhumanism](https://overcast.fm/+G2W0_J8nY), well worth a listen if you're interested in the intersection between computing, philosophy and artificial intelligence.
 
 ### Podcasts
 - [God in the machine: my strange journey into transhumanism – The Guardian](https://overcast.fm/+G2W0_J8nY) or [text version](https://www.theguardian.com/technology/2017/apr/18/god-in-the-machine-my-strange-journey-into-transhumanism)
