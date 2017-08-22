@@ -4,7 +4,7 @@ I've been listening to some fantastic albums this month, some of which I haven't
 
 ### Music
 - [Timber Timbre - Timber Timbre](https://open.spotify.com/album/1NjJn5lltXtt6W7xJ0qGpl)
-- [Thievery Corporation - Radio Retalation](https://open.spotify.com/album/7JK0l9nae3EcV6C1lz4LlG)
+- [Thievery Corporation - Radio Retaliation](https://open.spotify.com/album/7JK0l9nae3EcV6C1lz4LlG)
 - [The Dining Rooms - Numero Deux](https://open.spotify.com/album/56qpUnH6KXKyGUWxhq0N1p)
 - [Deerhunter - Halcyon Digest](https://open.spotify.com/album/1HUMjB15ARg96KIypcGzYY)
 - [The Knife - Silent Shout](https://open.spotify.com/album/2Anrvckz5UvbyUqi6qlp8S)
