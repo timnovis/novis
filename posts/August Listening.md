@@ -12,6 +12,6 @@ I've been listening to some fantastic albums this month, some of which I haven't
 I'm especially a fan of The Guardian's Audio Long Reads podcast series, they're a great length and the content is extremely interesting. I especially enjoyed [God in the machine: my strange journey into transhumanism](https://overcast.fm/+G2W0_J8nY), well worth a listen if you're interested in the intersection between computing, philosophy and artificial intelligence.
 
 ### Podcasts
-- [God in the machine: my strange journey into transhumanism – The Guardian](https://overcast.fm/+G2W0_J8nY)
-- [The age of banter - The Guardian](https://overcast.fm/+G2W0_7OQ4)
+- [God in the machine: my strange journey into transhumanism – The Guardian](https://overcast.fm/+G2W0_J8nY) or [text version](https://www.theguardian.com/technology/2017/apr/18/god-in-the-machine-my-strange-journey-into-transhumanism)
+- [The age of banter - The Guardian](https://overcast.fm/+G2W0_7OQ4) or [text version](https://www.theguardian.com/society/2017/jun/30/the-age-of-banter)
 - [Do By Friday](https://overcast.fm/itunes1169249168/do-by-friday) (these come out weekly, the episode [Hand Taint](https://overcast.fm/+HfJjkFZUU) was especially good)
