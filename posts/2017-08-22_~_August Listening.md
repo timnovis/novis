@@ -1,4 +1,3 @@
-<!-- [date]2017-08-22[enddate] -->
 I've been listening to some fantastic albums this month, some of which I haven't listened to in a long while. A pleasant mix of odd, creepy folk music, strange Swedish electro & smooth jazzy tones.
 
 

@@ -6,11 +6,14 @@ const Vision = require('vision')
 const NunjucksHapi = require('nunjucks-hapi')
 const Path = require('path')
 const fs = require('fs')
+const util = require('util')
 const marked = require('marked')
+const readFile = util.promisify(fs.readFile)
+const DATE_DELIM = '_~_'
 
 const server = new Hapi.Server()
 
-// Credit where credit's due for this function: https://gist.github.com/mathewbyrne/1280286
+// https://gist.github.com/mathewbyrne/1280286
 function slugify(text) {
   return text
     .toString()
@@ -22,12 +25,9 @@ function slugify(text) {
     .replace(/-+$/, '')
 }
 
-// Get post date from top of markdown file ([date]2017-08-21[enddate])
-function getPostDate(fileContents) {
-  let dateStart = fileContents.indexOf('[date]') + '[date]'.length
-  let dateEnd = fileContents.indexOf('[enddate]')
-
-  return fileContents.substring(dateStart, dateEnd)
+// Get post date from beginning of filename
+function getPostDate(filename) {
+  return filename.substring(0, filename.indexOf(DATE_DELIM))
 }
 
 server.connection({
@@ -70,46 +70,46 @@ let posts = []
 let files = fs.readdirSync(Path.join(__dirname, 'posts'))
 
 // Sort files from newest -> oldest
-files.sort((a, b) => {
-  let a1 = fs.readFileSync(Path.join(__dirname, 'posts', a))
-  let b1 = fs.readFileSync(Path.join(__dirname, 'posts', b))
-
-  return getPostDate(a) - getPostDate(b)
+files.sort((x, y) => {
+  return new Date(getPostDate(y)) - new Date(getPostDate(x))
 })
 .forEach(post => {
-  // Remove extension from file name for title
-  let title = post.replace(/\.[^/.]+$/, '')
+  // Remove extension and date from file name for title
+  let title = post.replace(/\.[^/.]+$/, '').substring(post.indexOf(DATE_DELIM) + DATE_DELIM.length)
 
   // Generate slug from file name for route path
   let slug = `/post/${slugify(title)}`
   
-  // Read each file
-  fs.readFile(Path.join(__dirname, 'posts', post), 'utf8', (err, contents) => {
+  // Read the file
+  readFile(Path.join(__dirname, 'posts', post), 'utf8')
+    .then(contents => {
+      let publishDate = getPostDate(post)
 
-    let publishDate = getPostDate(contents)
-
-    // Create postdata object
-    let postData = {
-      slug,
-      title,
-      post: marked(contents),
-      date: new Date(publishDate).toISOString(),
-      prettyDate: new Date(publishDate).toLocaleString('en-gb', { year: 'numeric', month: 'long', day: 'numeric' })
-    }
-    
-    // Push each post into posts array for home route
-    posts.push(postData)
-
-    // Add a static route for each file
-    server.route({
-      method: 'GET',
-      path: slug,
-      handler: function(request, reply) {
-        reply.view('post', postData)
+      // Create postdata object
+      let postData = {
+        slug,
+        title,
+        post: marked(contents),
+        date: new Date(publishDate).toISOString(),
+        prettyDate: new Date(publishDate).toLocaleString('en-gb', { year: 'numeric', month: 'long', day: 'numeric' })
       }
-    })
+      
+      // Push each post into posts array for home route
+      posts.push(postData)
 
-  })
+      // Add a static route for each file
+      server.route({
+        method: 'GET',
+        path: slug,
+        handler: function(request, reply) {
+          reply.view('post', postData)
+        }
+      })
+    })
+    .catch(err => {
+      console.log(err)
+    })
+    
 })
 
 // Home route
