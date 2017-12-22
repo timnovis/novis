@@ -1,31 +1,16 @@
 {
   "name": "novis",
-  "version": "1.0.0",
-  "description": "personal site",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon --watch server.js --watch views --watch posts --watch public --ext js,html,css,md"
-  },
-  "author": "Tim Novis <tim.novis@me.com>",
-  "license": "ISC",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "hapi": "^16.5.2",
-    "inert": "^4.2.1",
-    "marked": "^0.3.6",
-    "nunjucks-hapi": "^2.1.0",
-    "vision": "^4.1.1"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
   },
-  "devDependencies": {},
-  "now": {
-    "alias": "novis.co"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/timnovis/novis.git"
-  },
-  "bugs": {
-    "url": "https://github.com/timnovis/novis/issues"
-  },
-  "homepage": "https://github.com/timnovis/novis#readme"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
