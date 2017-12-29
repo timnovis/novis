@@ -90,10 +90,18 @@ article:last-child {
   font-size: 0.9rem;
 }
 
-footer nav a {
-  margin-right: 0.5rem;
-  font-size: 0.8rem;
-  font-weight: 300;
+.post-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.post-list li {
+  margin-bottom: 1rem;
+}
+
+.post-list a {
+  font-size: inherit;
 }
 
 @media only screen and (max-width: 50rem) {

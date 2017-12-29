@@ -1,0 +1,6 @@
+baseURL = "https://www.novis.co/"
+languageCode = "en-gb"
+title = "Tim Novis"
+theme = "novis"
+[permalinks]
+  posts = "/post/:title/"
