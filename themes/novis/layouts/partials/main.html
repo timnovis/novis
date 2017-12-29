@@ -1,0 +1,14 @@
+<main>
+  <ul class="post-list">
+    {{ range .Data.Pages }}
+    <li>
+      <h2>
+        <a href="{{.Permalink}}">{{.Title}}</a>
+      </h2>
+      <span class="time">Published
+        <time datetime="{{.Date }}">{{ .Date.Format "January 2, 2006"}}</time>
+      </span>
+    </li>
+    {{ end }}
+  </ul>
+</main>
