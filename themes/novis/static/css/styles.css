@@ -104,6 +104,15 @@ article:last-child {
   font-size: inherit;
 }
 
+code {
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 0.8rem;
+  color: dimgrey;
+  background: #f9f9f9;
+  padding: 0.1rem 0.3rem;
+}
+
 @media only screen and (max-width: 50rem) {
   body {
     margin: 1.5rem;
