@@ -16,6 +16,6 @@ This website will serve as a catalog for things I find interesting, thoughts abo
 
 I'll be back soon with more. - Tim
 
-UPDATE: 31st December 2017
+*UPDATE: 31st December 2017*
 
 I've rewritten the blog using Hugo
