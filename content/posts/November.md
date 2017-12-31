@@ -1,7 +1,7 @@
 ---
 title: "November"
 date: 2017-11-21T13:23:16Z
-draft: true
+draft: false
 ---
 
 With a lot of deliberation, I left my previous job after being offered the opportunity to help build a [new early stage startup](https://www.daisie.com/) from the ground up - I'm really excited about the new job, there's a lot to get my teeth stuck into from product design all the way through to actually building the application, 2018's shaping up to be a pretty interesting year. It also has to be said that I'm really enjoying working as part of what's mainly a two-person team, definitely a welcome change.

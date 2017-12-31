@@ -1,7 +1,7 @@
 ---
 title: "Sicily"
 date: 2017-09-24T13:22:54Z
-draft: true
+draft: false
 ---
 
 Last week, I returned from a 10 day holiday in Sicily. We made two stops, in Ortigia & in Palermo.

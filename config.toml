@@ -1,4 +1,4 @@
-baseURL = "https://www.novis.co/"
+baseURL = "/"
 languageCode = "en-gb"
 title = "Tim Novis"
 theme = "novis"
