@@ -4,8 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }}</title>
-  <meta name="description" content="javascript developer & ui designer // currently at daisie">
+  <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ if .IsPage }} {{ .Summary | plainify }} {{ else }} I'm Tim Novis - currently working as a technical director and JavaScript developer at Daisie. {{ end }}">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="{{ if .IsPage }} {{ .Summary | plainify }} {{ else }} I'm Tim Novis - currently working as a technical director and JavaScript developer at Daisie. {{ end }}"
+  />
+  <meta name="twitter:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}"
+  />
+  <meta name="twitter:site" content="@timnovis" />
+  <meta name="twitter:creator" content="@timnovis" />
   <link rel="stylesheet" type="text/css" href="/css/styles{{ $.Site.Params.style }}.css">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
