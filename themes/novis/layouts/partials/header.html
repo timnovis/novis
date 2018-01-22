@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ if .IsPage }} {{ .Summary | plainify }} {{ else }} I'm Tim Novis - currently working as a technical director and JavaScript developer at Daisie. {{ end }}">
+  <meta name="description" content="{{ if .IsPage }} {{ .Summary | plainify }} {{ else }} Hi! I'm Tim, a developer from the UK primarily working with JavaScript. I'm currently working as the lead JavaScript developer and technical director at daisie, building our front-end and native apps using React. {{ end }}">
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:description" content="{{ if .IsPage }} {{ .Summary | plainify }} {{ else }} I'm Tim Novis - currently working as a technical director and JavaScript developer at Daisie. {{ end }}"
+  <meta name="twitter:description" content="{{ if .IsPage }} {{ .Summary | plainify }} {{ else }} Hi! I'm Tim, a developer from the UK primarily working with JavaScript. I'm currently working as the lead JavaScript developer and technical director at daisie, building our front-end and native apps using React. {{ end }}"
   />
   <meta name="twitter:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}"
   />
@@ -24,7 +24,11 @@
     <h1 class="logo">
       <a href="/">{{ $.Site.Title }}</a>
     </h1>
-    <p>javascript developer & ui designer // currently at
-      <a href="https://www.daisie.com/">daisie</a>
+    <p>Hi! I'm Tim, a developer from the UK primarily working with JavaScript. I'm currently working as the lead JavaScript
+      developer and technical director at
+      <a href="https://www.daisie.com/">daisie</a>, building our front-end and native apps using React.</p>
+    <p>If you want to chat, you can
+      <a rel="me" href="https://twitter.com/timnovis">tweet me</a> or shoot me an
+      <a href="mailto:tim@novis.co">email</a>.
     </p>
   </header>
