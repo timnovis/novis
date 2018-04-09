@@ -5,9 +5,8 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 1.8;
   margin: 3rem;
@@ -111,6 +110,7 @@ code {
   color: dimgrey;
   background: #f9f9f9;
   padding: 0.1rem 0.3rem;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 50rem) {
