@@ -16,7 +16,7 @@ It's super easy to set up - and there are a few ways to achieve it too.
 
 ## 1. With .babelrc
 
-If your project doesn't use Webpack - for example if you're working with React Native, you can use your `.babelrc` file and a babel plugin to get alising set up.
+If your project doesn't use Webpack - for example if you're working with React Native, you can use your `.babelrc` file and a babel plugin to get aliasing set up.
 
 Firstly, you'll want to install `babel-plugin-module-resolver` with yarn or npm.
 
