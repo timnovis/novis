@@ -1,6 +1,6 @@
 <main>
   <ul class="post-list">
-    {{ range .Data.Pages }}
+    {{ range where .Data.Pages "Section" "==" "posts" }}
     <li>
       <h2>
         <a href="{{.Permalink}}">{{.Title}}</a>

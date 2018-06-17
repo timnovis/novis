@@ -6,7 +6,7 @@ draft: false
 
 Is there anything more infuriating than diving into a JavaScript project to find this?
 
-```
+```js
 import Component from '../../../some/deeply/ambiguous/location';
 ```
 
@@ -22,16 +22,16 @@ Firstly, you'll want to install `babel-plugin-module-resolver` with yarn or npm.
 
 Once you've done that, open up your project's `.babelrc` file, and under the `plugins` key, add this:
 
-```
+```js
 [
-  "module-resolver",
+  'module-resolver',
   {
-    "root": ["./src"],
-    "alias": {
-      "myAlias": "./src"
-    }
-  }
-]
+    root: ['./src'],
+    alias: {
+      myAlias: './src',
+    },
+  },
+];
 ```
 
 The `root` key here specifies a custom project root. For example, with a custom root of `src`, if you wanted to import something from `src/components/x`, you can simply `import x from 'components/x';`.
@@ -46,7 +46,7 @@ If your project uses Webpack, it's super simple to jump into the config and set 
 
 Under the `resolve` key in your configuration, you can add a new key called `alias` like so:
 
-```
+```js
 alias: {
   'myAlias': path.resolve('src'),
 }
@@ -58,10 +58,10 @@ You can read more about this at Webpack's documentation site [here](https://webp
 
 I've used this workaround before, but didn't like all of the loose files floating around in my project. All you need to do is create a `package.json` file in the root of each folder you'd like to alias, containing this:
 
-```
+```json
 {
   "name": "myAlias"
 }
 ```
 
-Now you can `import x from 'myAlias/components/x';` from anywhere in your codebase.
+Now you can `import x from 'myAlias/components/x'` from anywhere in your codebase.

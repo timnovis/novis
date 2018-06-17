@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom Aliases in React Native with Babel - Tim Novis</title>
+  <meta name="description" content=" Is there anything more infuriating than diving into a JavaScript project to find this?
+import Component from &amp;#39;../../../some/deeply/ambiguous/location&amp;#39;;  Imagine if we could just import Component from &#39;myAlias/component&#39;; from anywhere in the codebase!
+It&amp;rsquo;s super easy to set up - and there are a few ways to achieve it too.
+1. With .babelrc If your project doesn&amp;rsquo;t use Webpack - for example if you&amp;rsquo;re working with React Native, you can use your . ">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content=" Is there anything more infuriating than diving into a JavaScript project to find this?
+import Component from &amp;#39;../../../some/deeply/ambiguous/location&amp;#39;;  Imagine if we could just import Component from &#39;myAlias/component&#39;; from anywhere in the codebase!
+It&amp;rsquo;s super easy to set up - and there are a few ways to achieve it too.
+1. With .babelrc If your project doesn&amp;rsquo;t use Webpack - for example if you&amp;rsquo;re working with React Native, you can use your . "
+  />
+  <meta name="twitter:title" content="Custom Aliases in React Native with Babel - Tim Novis"
+  />
+  <meta name="twitter:site" content="@timnovis" />
+  <meta name="twitter:creator" content="@timnovis" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/syntax.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">
+      <a href="/">Tim Novis</a>
+    </h1>
+    <a href="/pages/about">about me</a>
+  </header>
+
+<main>
+  <article>
+    <h1>Custom Aliases in React Native with Babel</h1>
+    <span class="time">Published
+      <time datetime="2018-04-09 10:17:17 &#43;0100 BST">April 9, 2018</time>
+    </span>
+    
+
+<p>Is there anything more infuriating than diving into a JavaScript project to find this?</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">import</span> <span class="nx">Component</span> <span class="nx">from</span> <span class="s1">&#39;../../../some/deeply/ambiguous/location&#39;</span><span class="p">;</span>
+</code></pre></div>
+<p>Imagine if we could just <code>import Component from 'myAlias/component';</code> from anywhere in the codebase!</p>
+
+<p>It&rsquo;s super easy to set up - and there are a few ways to achieve it too.</p>
+
+<h2 id="1-with-babelrc">1. With .babelrc</h2>
+
+<p>If your project doesn&rsquo;t use Webpack - for example if you&rsquo;re working with React Native, you can use your <code>.babelrc</code> file and a babel plugin to get aliasing set up.</p>
+
+<p>Firstly, you&rsquo;ll want to install <code>babel-plugin-module-resolver</code> with yarn or npm.</p>
+
+<p>Once you&rsquo;ve done that, open up your project&rsquo;s <code>.babelrc</code> file, and under the <code>plugins</code> key, add this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="p">[</span>
+  <span class="s1">&#39;module-resolver&#39;</span><span class="p">,</span>
+  <span class="p">{</span>
+    <span class="nx">root</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;./src&#39;</span><span class="p">],</span>
+    <span class="nx">alias</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">myAlias</span><span class="o">:</span> <span class="s1">&#39;./src&#39;</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">},</span>
+<span class="p">];</span>
+</code></pre></div>
+<p>The <code>root</code> key here specifies a custom project root. For example, with a custom root of <code>src</code>, if you wanted to import something from <code>src/components/x</code>, you can simply <code>import x from 'components/x';</code>.</p>
+
+<p>The <code>alias</code> key is self explanatory and you can add as many of these as you like. With an alias of <code>myAlias</code>, you can then <code>import x from 'myAlias/components/x';</code> from anywhere within your project. Nice!</p>
+
+<p>Read more about this plugin and view the documentation <a href="https://github.com/tleunen/babel-plugin-module-resolver">here</a></p>
+
+<h2 id="2-with-webpack">2. With Webpack</h2>
+
+<p>If your project uses Webpack, it&rsquo;s super simple to jump into the config and set up aliasing.</p>
+
+<p>Under the <code>resolve</code> key in your configuration, you can add a new key called <code>alias</code> like so:</p>
+<div class="highlight"><pre class="chroma">alias: {
+  &#39;myAlias&#39;: path.resolve(&#39;src&#39;),
+}</pre></div>
+<p>You can read more about this at Webpack&rsquo;s documentation site <a href="https://webpack.js.org/configuration/resolve/#resolve-alias">here</a></p>
+
+<h2 id="3-the-package-json-hack">3. The package.json hack</h2>
+
+<p>I&rsquo;ve used this workaround before, but didn&rsquo;t like all of the loose files floating around in my project. All you need to do is create a <code>package.json</code> file in the root of each folder you&rsquo;d like to alias, containing this:</p>
+<div class="highlight"><pre class="chroma">{
+  &#34;name&#34;: &#34;myAlias&#34;
+}</pre></div>
+<p>Now you can <code>import x from 'myAlias/components/x';</code> from anywhere in your codebase.</p>
+
+  </article>
+</main>
+
+<footer>
+  &copy; Tim Novis
+  <nav>
+    <a rel="me" href="https://github.com/timnovis">github/ timnovis</a>
+    <a rel="me" href="https://twitter.com/timnovis">twitter/ @timnovis</a>
+    <a rel="me" href="https://instagram.com/timnovis">instagram/ @timnovis</a>
+    <a rel="me" href="https://www.linkedin.com/in/timnovis">linkedin/ timnovis</a>
+  </nav>
+</footer>
+</body>
+
+</html>

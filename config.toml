@@ -2,5 +2,9 @@ baseURL = "/"
 languageCode = "en-gb"
 title = "Tim Novis"
 theme = "novis"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
 [permalinks]
   posts = "/post/:title/"
+  pages = "/:title/"

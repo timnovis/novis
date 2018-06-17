@@ -16,17 +16,17 @@ First of all, I set up an empty repo on BitBucket called `native-mirror` where t
 
 We're already using GitLab's [great CI features](https://about.gitlab.com/features/gitlab-ci-cd/) to run tests on our codebase, so I imagined it wouldn't be too hard to manually mirror the repo every time the pipeline was run. I found this [great guide](https://docs.gitlab.com/ee/ci/ssh_keys/) on how to use SSH keys with .gitlab-ci.yml.
 
-* Run `ssh-keygen -t rsa -b 4096 -C "bitbucketuser@example.com"` with _no passphrase_ and copy it to your clipboard.
+- Run `ssh-keygen -t rsa -b 4096 -C "bitbucketuser@example.com"` with _no passphrase_ and copy it to your clipboard.
 
-* Add it to the [Secret Variables](https://docs.gitlab.com/ee/ci/variables/#secret-variables) of your repository in GitLab under the key SSH_PRIVATE_KEY
+- Add it to the [Secret Variables](https://docs.gitlab.com/ee/ci/variables/#secret-variables) of your repository in GitLab under the key SSH_PRIVATE_KEY
 
-* Copy the _public key_ you generated and add it to the SSH keys section in the settings of your BitBucket account
+- Copy the _public key_ you generated and add it to the SSH keys section in the settings of your BitBucket account
 
-* If you haven't got one already, create the file `.gitlab-ci.yml` in the root of your project
+- If you haven't got one already, create the file `.gitlab-ci.yml` in the root of your project
 
-* In that file, use this configuration:
+- In that file, use this configuration:
 
-```
+```yaml
 image: timbru31/node-alpine-git:latest
 
 stages:
