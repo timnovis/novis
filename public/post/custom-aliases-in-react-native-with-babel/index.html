@@ -31,7 +31,7 @@ It&amp;rsquo;s super easy to set up - and there are a few ways to achieve it too
     <h1 class="logo">
       <a href="/">Tim Novis</a>
     </h1>
-    <a href="/pages/about">about me</a>
+    <a href="/about">about</a>
   </header>
 
 <main>
@@ -77,30 +77,25 @@ It&amp;rsquo;s super easy to set up - and there are a few ways to achieve it too
 <p>If your project uses Webpack, it&rsquo;s super simple to jump into the config and set up aliasing.</p>
 
 <p>Under the <code>resolve</code> key in your configuration, you can add a new key called <code>alias</code> like so:</p>
-<div class="highlight"><pre class="chroma">alias: {
-  &#39;myAlias&#39;: path.resolve(&#39;src&#39;),
-}</pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">alias</span><span class="o">:</span> <span class="p">{</span>
+  <span class="s1">&#39;myAlias&#39;</span><span class="o">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">),</span>
+<span class="p">}</span>
+</code></pre></div>
 <p>You can read more about this at Webpack&rsquo;s documentation site <a href="https://webpack.js.org/configuration/resolve/#resolve-alias">here</a></p>
 
 <h2 id="3-the-package-json-hack">3. The package.json hack</h2>
 
 <p>I&rsquo;ve used this workaround before, but didn&rsquo;t like all of the loose files floating around in my project. All you need to do is create a <code>package.json</code> file in the root of each folder you&rsquo;d like to alias, containing this:</p>
-<div class="highlight"><pre class="chroma">{
-  &#34;name&#34;: &#34;myAlias&#34;
-}</pre></div>
-<p>Now you can <code>import x from 'myAlias/components/x';</code> from anywhere in your codebase.</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+  <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;myAlias&#34;</span>
+<span class="p">}</span></code></pre></div>
+<p>Now you can <code>import x from 'myAlias/components/x'</code> from anywhere in your codebase.</p>
 
   </article>
 </main>
 
 <footer>
   &copy; Tim Novis
-  <nav>
-    <a rel="me" href="https://github.com/timnovis">github/ timnovis</a>
-    <a rel="me" href="https://twitter.com/timnovis">twitter/ @timnovis</a>
-    <a rel="me" href="https://instagram.com/timnovis">instagram/ @timnovis</a>
-    <a rel="me" href="https://www.linkedin.com/in/timnovis">linkedin/ timnovis</a>
-  </nav>
 </footer>
 </body>
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Tim Novis</title>
+    <link>/pages/</link>
+    <description>Recent content in Pages on Tim Novis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 17 Jun 2018 15:58:06 +0100</lastBuildDate>
+    
+	<atom:link href="/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sun, 17 Jun 2018 15:58:06 +0100</pubDate>
+      
+      <guid>/about/</guid>
+      <description>About I&amp;rsquo;m Tim Novis, a web, JavaScript and aspiring ${language} developer from the South of England focussed on building UIs with React &amp;amp; React Native. Outside of programming, my interests mainly lie in music, amateur succulent growing, travel and eating way, way more than I should.
+Currently daisie // Nov 2017 – Present
+I&amp;rsquo;m currently working as lead UI engineer and technical director at daisie, a social media startup focussed on creating networking and collaboration tools for the next generation of creatives.</description>
+    </item>
+    
+  </channel>
+</rss>

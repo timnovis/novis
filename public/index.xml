@@ -6,10 +6,21 @@
     <description>Recent content on Tim Novis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 20 Apr 2018 16:39:43 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 17 Jun 2018 15:58:06 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sun, 17 Jun 2018 15:58:06 +0100</pubDate>
+      
+      <guid>/about/</guid>
+      <description>About I&amp;rsquo;m Tim Novis, a web, JavaScript and aspiring ${language} developer from the South of England focussed on building UIs with React &amp;amp; React Native. Outside of programming, my interests mainly lie in music, amateur succulent growing, travel and eating way, way more than I should.
+Currently daisie // Nov 2017 – Present
+I&amp;rsquo;m currently working as lead UI engineer and technical director at daisie, a social media startup focussed on creating networking and collaboration tools for the next generation of creatives.</description>
+    </item>
     
     <item>
       <title>Building to AppCenter from GitLab</title>

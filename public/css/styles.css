@@ -112,6 +112,18 @@ article:last-child {
   font-size: inherit;
 }
 
+pre,
+code {
+  font-family: 'Liga Roboto Mono';
+  font-size: 0.95em;
+}
+
+.chroma {
+  padding: 10px;
+  border-radius: 3px;
+  overflow: scroll;
+}
+
 @media only screen and (max-width: 50rem) {
   body {
     margin: 1.5em;

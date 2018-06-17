@@ -27,7 +27,7 @@ I knew in order to get this working I&amp;rsquo;d have to use one of AppCenter&a
     <h1 class="logo">
       <a href="/">Tim Novis</a>
     </h1>
-    <a href="/pages/about">about me</a>
+    <a href="/about">about</a>
   </header>
 
 <main>
@@ -61,27 +61,27 @@ I knew in order to get this working I&amp;rsquo;d have to use one of AppCenter&a
 
 <li><p>In that file, use this configuration:</p></li>
 </ul>
-<div class="highlight"><pre class="chroma">image: timbru31/node-alpine-git:latest
-
-stages:
-  - mirror
-
-before_script:
-  - &#39;which ssh-agent || ( apt-get update -y &amp;&amp; apt-get install openssh-client git -y )&#39;
-  - eval $(ssh-agent -s)
-  - echo &#34;$SSH_PRIVATE_KEY&#34; | tr -d &#39;\r&#39; | ssh-add - &gt; /dev/null
-  - mkdir -p ~/.ssh
-  - chmod 700 ~/.ssh
-  - ssh-keyscan bitbucket.org &gt;&gt; ~/.ssh/known_hosts
-  - chmod 644 ~/.ssh/known_hosts
-  - git config --global user.email &#34;bitbucketuser@example.com&#34;
-  - git config --global user.name &#34;BitBucket User&#34;
-  - ssh -T git@bitbucket.org
-
-mirror:
-  stage: mirror
-  script:
-    - git push --mirror git@bitbucket.org:yourorg/repo.git</pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">image<span class="p">:</span><span class="w"> </span>timbru31/node-alpine-git<span class="p">:</span>latest<span class="w">
+</span><span class="w">
+</span><span class="w"></span>stages<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>mirror<span class="w">
+</span><span class="w">
+</span><span class="w"></span>before_script<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span><span class="s1">&#39;which ssh-agent || ( apt-get update -y &amp;&amp; apt-get install openssh-client git -y )&#39;</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>eval<span class="w"> </span>$(ssh-agent<span class="w"> </span>-s)<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>echo<span class="w"> </span><span class="s2">&#34;$SSH_PRIVATE_KEY&#34;</span><span class="w"> </span><span class="sd">| tr -d &#39;\r&#39; | ssh-add - &gt; /dev/null
+</span><span class="sd">  - mkdir -p ~/.ssh
+</span><span class="sd">  - chmod 700 ~/.ssh
+</span><span class="sd">  - ssh-keyscan bitbucket.org &gt;&gt; ~/.ssh/known_hosts
+</span><span class="sd">  - chmod 644 ~/.ssh/known_hosts
+</span><span class="sd">  - git config --global user.email &#34;bitbucketuser@example.com&#34;
+</span><span class="sd">  - git config --global user.name &#34;BitBucket User&#34;
+</span><span class="sd">  - ssh -T git@bitbucket.org</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>mirror<span class="p">:</span><span class="w">
+</span><span class="w">  </span>stage<span class="p">:</span><span class="w"> </span>mirror<span class="w">
+</span><span class="w">  </span>script<span class="p">:</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>--mirror<span class="w"> </span>git@bitbucket.org<span class="p">:</span>yourorg/repo.git</code></pre></div>
 <p>Note: the docker image node-alpine-git might not be quite right for you if you&rsquo;re not working on a JavaScript/RN project. Make sure you replace the git config lines with your own. Make sure you swap out the git URL on the last line for your own</p>
 
 <h2 id="appcenter">AppCenter</h2>
@@ -97,12 +97,6 @@ mirror:
 
 <footer>
   &copy; Tim Novis
-  <nav>
-    <a rel="me" href="https://github.com/timnovis">github/ timnovis</a>
-    <a rel="me" href="https://twitter.com/timnovis">twitter/ @timnovis</a>
-    <a rel="me" href="https://instagram.com/timnovis">instagram/ @timnovis</a>
-    <a rel="me" href="https://www.linkedin.com/in/timnovis">linkedin/ timnovis</a>
-  </nav>
 </footer>
 </body>
 
