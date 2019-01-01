@@ -1,11 +1,8 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
 name = "Novis"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
-homepage = "http://example.com/"
+licenselink = "https://github.com/timnovis/novis/blob/master/themes/novis/LICENSE.md"
+description = "My personal site"
+homepage = "https://novis.co/"
 tags = []
 features = []
 min_version = "0.31.1"
