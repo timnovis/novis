@@ -6,13 +6,13 @@ draft: false
 
 # Who?
 
-I'm a software developer based in London focussed on building performant user interfaces. Right now, I'm primarily working with JavaScript, TypeScript & React.
+I'm a software developer based in London. Right now, I'm primarily working with TypeScript, Node and React.
 
 ## Currently
 
 [daisie](https://www.daisie.com/) // Nov 2017 – Present
 
-Currently I work at [daisie](https://www.daisie.com/) as a front-end engineer, building the next generation of tools for creative collaboration.
+Working across the stack, building a platform for creative collaboration with Node, TypeScript and React.
 
 ## Elsewhere
 

@@ -1,7 +1,7 @@
 ---
-title: "Hello"
+title: 'Hello'
 date: 2017-08-21T13:21:39Z
-draft: false
+draft: true
 ---
 
 I needed a place to store my thoughts and record any work I've been doing, and my personal website was in dire need of a refresh.
@@ -16,6 +16,6 @@ This website will serve as a catalog for things I find interesting, thoughts abo
 
 I'll be back soon with more. - Tim
 
-*UPDATE: 31st December 2017*
+_UPDATE: 31st December 2017_
 
 I've rewritten the blog using Hugo

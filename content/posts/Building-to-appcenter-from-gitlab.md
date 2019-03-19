@@ -1,7 +1,7 @@
 ---
-title: "Building to AppCenter from GitLab"
+title: 'Building to AppCenter from GitLab'
 date: 2018-04-20T16:39:43+01:00
-draft: false
+draft: true
 ---
 
 When I initially found out about [AppCenter.ms](https://appcenter.ms/), I was really excited to start using it, until, to my disappointment, I found that there was no support for GitLab. I didn't stop there though!
