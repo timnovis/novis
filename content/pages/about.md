@@ -6,7 +6,7 @@ draft: false
 
 # Who?
 
-I'm a software developer based in London. Right now, I'm primarily working with TypeScript, Node and React.
+I'm a software developer based in London. Right now, I'm primarily working with TypeScript, Node and React. I enjoy writing and contributing to resilient and future-proof codebases, and using the right tools for the job.
 
 ## Currently
 
