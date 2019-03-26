@@ -4,7 +4,7 @@ date: 2019-03-26T21:02:36Z
 draft: false
 ---
 
-I've been back from Japan for a few days now, the jetlag is finally wearing off after a weekend of being horribly confused. Not that I'm complaining.
+I've been back from Japan for a few days now, the jetlag is finally wearing off after a weekend of feeling horribly confused. Not that I'm complaining.
 
 It's great to see my coworkers and friends again, catching up on all that I've missed over the past 2 weeks. I feel like I'm getting back into the flow.
 
