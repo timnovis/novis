@@ -14,11 +14,15 @@ Software developer based in London, primarily working with TypeScript, Node and 
 
 Working across the stack, building a social platform for creative collaboration.
 
-- Built the v1 MVP with React Native, gathering 20,000+ downloads in the first 24 hours
-- Helped to plan, architect and build our v2 web product with React & TypeScript
+- Built the v1 MVP with React Native & styled-components, integrating with a GraphQL backend, gathering 20,000+ downloads in the first 24 hours. Built native extension with Objective-C to deal with system level libraries for image and video processing needs
+
+- Helped to plan, architect and build our v2 web product with React, TypeScript and SASS. Implemented a lightweight state management solution with Unistore and onboarded the rest of the team with TypeScript
+
 - Worked on the Node REST API with TypeScript & Fastify, TDD with Jest, database interaction with TypeORM
 
-Tech: Node.js, TypeScript, Postgres, REST, Docker, React, React Native, SASS, styled-components
+- Built an admin console for our support team with Node, Express & Nunjucks with a sprinkling of client-side JavaScript
+
+Tech: Node.js, JavaScript, TypeScript, Postgres, REST, Docker, React, React Native, SASS, styled-components
 
 ## Previously
 

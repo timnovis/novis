@@ -8,7 +8,7 @@ It's been a pretty unremarkable week again. I started writing weeknotes in order
 
 Anyway. This week, from what I remember:
 
-At work I added a bunch of functionality to our internal admin panel. It's a lovely bit of software, a CSR website written with Node & Express, no build step, no fat client side frameworks, and for the most part works without JS at all. Simpler times. I've been thinking a lot about ✨ tools ✨ recently. There's probably a separate blog post coming at some point in the indeterminate future.
+At work I added a bunch of functionality to our internal admin panel. It's a lovely bit of software, a server rendered website written with Node & Express, no build step, no fat client side frameworks, and for the most part works without JS at all. Simpler times. I've been thinking a lot about ✨ tools ✨ recently. There's probably a separate blog post coming at some point in the indeterminate future.
 
 On Monday, we had an urgent front-end deployment to roll out, but our CI pipeline was, to put it bluntly, fucked. Much to my amusement, and after much deliberation, we decided to embark on a pretty dodgy exercise of manually copying our static build files to s3. The modern equivalent of drag-and-dropping files on to an FTP server. Full circle?
 
