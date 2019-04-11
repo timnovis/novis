@@ -4,7 +4,7 @@ date: 2019-04-11T12:07:33+01:00
 draft: false
 ---
 
-I mentioned in my [weeknotes](/post/weeknotes-3/) that I've been feeling rather conflicted recently regarding the state of modern front-end tooling, and common practices that seem to have become the status quo. Before I get into it, I'll preface by saying this: I'm not anti-JS (I am primarily a JavaScript developer), and I'm not anti-web. You could say I'm that a bit of a [centrist](https://en.wikipedia.org/wiki/Centrism) when it comes to this debate. I love React, Vue, TypeScript and all of the goodness that the last few years of web innovation has produced, but (imo) there's a large subset of developers who are getting an extreme case of tunnel vision when it comes to discussing what it means to build for the web platform.
+I mentioned in my [weeknotes](/post/weeknotes-3/) that I've been feeling rather conflicted recently regarding the state of modern front-end tooling, and common practices that seem to have become the status quo. Before I get into it, I'll preface by saying this: I'm not anti-JS (I am primarily a JavaScript developer), and I'm not anti-web. You could say I'm that a bit of a [centrist](https://en.wikipedia.org/wiki/Centrism) when it comes to this debate. I love React, Vue, TypeScript and all of the goodness that the last few years of web innovation has produced, but (imo) there's a large subset of developers who suffer from an extreme case of tunnel vision when it comes to discussing what it means to build for the web platform.
 
 My disenchantment began when I was tasked with building an admin panel for our support team at work. When I was choosing the tech stack (I'm thankful to have this level of autonomy), I came up with a loose set of requirements:
 
