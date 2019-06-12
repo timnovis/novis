@@ -10,7 +10,13 @@ Software developer based in London, primarily working with TypeScript, Node and 
 
 ## Currently
 
-**[daisie](https://www.daisie.com/) // Nov 2017 – Present**
+**[Financial Times](https://www.ft.com/) // June 2019 - Present**
+
+Software Engineer working on the consumer products team for FT.com
+
+## Previously
+
+**[Daisie](https://www.daisie.com/) // Nov 2017 – June 2019**
 
 Working across the stack, building a social platform for creative collaboration.
 
@@ -23,8 +29,6 @@ Working across the stack, building a social platform for creative collaboration.
 - Built an admin console for our support team with Node, Express & Nunjucks with a sprinkling of client-side JavaScript
 
 Tech: Node.js, JavaScript, TypeScript, Postgres, REST, Docker, React, React Native, SASS, styled-components
-
-## Previously
 
 **[Madgex](https://www.madgex.com/) // Nov 2016 - Nov 2017**
 
