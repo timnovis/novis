@@ -8,3 +8,6 @@ pygmentsCodeFencesGuessSyntax = true
 [permalinks]
   posts = "/post/:title/"
   pages = "/:title/"
+[mediaTypes]
+  [mediaTypes."text/javascript"]
+    suffixes = ["js", "mjs"]

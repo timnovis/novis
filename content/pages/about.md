@@ -4,10 +4,6 @@ date: 2018-06-17T15:58:06+01:00
 draft: false
 ---
 
-# Who?
-
-Software developer based in London, primarily working with TypeScript, Node and React.
-
 ## Currently
 
 **[Financial Times](https://www.ft.com/) // June 2019 - Present**
@@ -49,9 +45,3 @@ Delivered end to end website projects for clients such as Pets Corner, PayPal an
 - Used Vue.js to build app-like functionality into existing websites
 
 Tech: HTML, CSS, SASS, JavaScript, Vue.js, PHP, MySQL
-
-## Elsewhere
-
-[github](https://github.com/timnovis)
-[instagram](https://instagram.com/timnovis)
-[twitter](https://twitter.com/timnovis)

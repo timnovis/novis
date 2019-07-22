@@ -1,6 +1,25 @@
 <footer>
-  &copy; Tim Novis {{ now.Format "2006" }}
+  <div class="toggles">
+    <span class="label">Emoji Trail:
+    </span>
+
+    <label class="feature-toggle">
+      <input type="radio" name="emoji-toggle" value="on" class="emoji-toggle-on" checked="checked"/>
+      <span>On</span>
+    </label>
+
+    <label class="feature-toggle">
+      <input type="radio" name="emoji-toggle" value="off" class="emoji-toggle-off"/>
+      <span>Off</span>
+    </label>
+  </div>
+
+  <a href="https://twitter.com/timnovis">@timnovis</a>
+  //
+  <a href="mailto:tim@novis.co">tim@novis.co</a>
 </footer>
+</main>
+<script type="module" src="/js/main.mjs"></script>
 </body>
 
 </html>

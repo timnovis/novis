@@ -1,13 +1,12 @@
+{{ .Scratch.Set "main_class" "article" }}
 {{ partial "header.html" . }}
 
-<main>
-  <article>
-    <h1>{{ .Title }}</h1>
-    <span class="time">Published
-      <time datetime="{{.Date }}">{{ .Date.Format "January 2, 2006"}}</time>
-    </span>
-    {{ .Content }}
-  </article>
-</main>
+<article>
+  <h1>{{ .Title }}</h1>
+  <span class="time">Published
+    <time datetime="{{.Date }}">{{ .Date.Format "January 2, 2006"}}</time>
+  </span>
+  {{ .Content }}
+</article>
 
 {{ partial "footer.html" . }}

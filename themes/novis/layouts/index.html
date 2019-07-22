@@ -1,1 +1,39 @@
-{{ partial "header.html" . }} {{ partial "main.html" . }} {{ partial "footer.html" . }}
+{{ .Scratch.Set "main_class" "home" }}
+{{ partial "header.html" . }}
+
+<section class="flex">
+  <section class="home-col">
+    <header>
+      <h1>Tim Novis
+        <span>is a software engineer</span></h1>
+      <p>Welcome to my website, I'm glad you're here. I'm a software engineer based in London, UK.</p>
+    </header>
+    <article>
+      <p>I help companies to build products mainly using web technologies, supported by tools such as TypeScript,
+        Node.js, React and React Native.</p>
+
+      <p>I'm equally as comfortable without these tools as I am with them, and I'm happy to pick up whatever technology
+        is best suited to the job, having worked with lots of different stacks over the years.</p>
+
+      <p>Right now I'm working as a software engineer for the Financial Times, where I help out with shipping features
+        for
+        <a href="https://www.ft.com/">FT.com</a>. I'm also advising
+        <a href="https://contact.agency/">Contact</a>, helping out with the planning and build of their upcoming iOS
+        app.
+      </p>
+
+      <p>If you wanna say hi, you can find me
+        <a href="https://twitter.com/timnovis">@timnovis</a>
+      </p>
+    </article>
+  </section>
+  <section class="home-col">
+    <header>
+      <h1>Occasional <span>notes</span></h1>
+    </header>
+
+    {{ partial "post-list.html" . }}
+  </section>
+</section>
+
+{{ partial "footer.html" . }}

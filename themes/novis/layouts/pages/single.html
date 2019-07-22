@@ -1,9 +1,8 @@
+{{ .Scratch.Set "main_class" "article" }}
 {{ partial "header.html" . }}
 
-<main>
-  <article>
-    {{ .Content }}
-  </article>
-</main>
+<article>
+  {{ .Content }}
+</article>
 
 {{ partial "footer.html" . }}

@@ -1,6 +1,5 @@
-<main>
-  <ul class="post-list">
-    {{ range where .Data.Pages "Section" "==" "posts" }}
+<ul class="post-list">
+  {{ range where .Data.Pages "Section" "==" "posts" }}
     <li>
       <h2>
         <a href="{{.Permalink}}">{{.Title}}</a>
@@ -9,6 +8,5 @@
         <time datetime="{{.Date }}">{{ .Date.Format "January 2, 2006"}}</time>
       </span>
     </li>
-    {{ end }}
-  </ul>
-</main>
+  {{ end }}
+</ul>
