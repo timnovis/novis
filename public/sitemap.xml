@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2019-06-07T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-06-07T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/weeknotes-5/</loc>
+    <lastmod>2019-06-07T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/weeknotes-4/</loc>
+    <lastmod>2019-04-22T22:01:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/disenchantment/</loc>
+    <lastmod>2019-04-11T12:07:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/weeknotes-3/</loc>
+    <lastmod>2019-04-10T22:19:14+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/weeknotes-2/</loc>
+    <lastmod>2019-04-03T22:46:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/weeknotes-1/</loc>
+    <lastmod>2019-03-26T21:02:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/weeknotes-0/</loc>
+    <lastmod>2019-03-19T16:39:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2018-06-17T15:58:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/pages/</loc>
+    <lastmod>2018-06-17T15:58:06+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/building-to-appcenter-from-gitlab/</loc>
+    <lastmod>2018-04-20T16:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/custom-aliases-in-react-native-with-babel/</loc>
+    <lastmod>2018-04-09T10:17:17+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

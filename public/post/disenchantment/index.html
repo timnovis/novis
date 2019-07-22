@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Disenchantment
+    
+    -
+    Tim Novis
+    
+  </title>
+  <meta name="description"
+    content=" I mentioned in my weeknotes that I&amp;rsquo;ve been feeling rather conflicted recently regarding the state of modern front-end tooling, and common practices that seem to have become the status quo. Before I get into it, I&amp;rsquo;ll preface by saying this: I&amp;rsquo;m not anti-JS (I am primarily a JavaScript developer), and I&amp;rsquo;m not anti-web. You could say I&amp;rsquo;m that a bit of a centrist when it comes to this debate. I love React, Vue, TypeScript and all of the goodness that the last few years of web innovation has produced, but (imo) there&amp;rsquo;s a large subset of developers who suffer from an extreme case of tunnel vision when it comes to discussing what it means to build for the web platform. ">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description"
+    content=" I mentioned in my weeknotes that I&amp;rsquo;ve been feeling rather conflicted recently regarding the state of modern front-end tooling, and common practices that seem to have become the status quo. Before I get into it, I&amp;rsquo;ll preface by saying this: I&amp;rsquo;m not anti-JS (I am primarily a JavaScript developer), and I&amp;rsquo;m not anti-web. You could say I&amp;rsquo;m that a bit of a centrist when it comes to this debate. I love React, Vue, TypeScript and all of the goodness that the last few years of web innovation has produced, but (imo) there&amp;rsquo;s a large subset of developers who suffer from an extreme case of tunnel vision when it comes to discussing what it means to build for the web platform. " />
+  <meta name="twitter:title"
+    content="Disenchantment - Tim Novis" />
+  <meta name="twitter:site" content="@timnovis" />
+  <meta name="twitter:creator" content="@timnovis" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/syntax.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+  <main class="article">
+
+<article>
+  <h1>Disenchantment</h1>
+  <span class="time">Published
+    <time datetime="2019-04-11 12:07:33 &#43;0100 BST">April 11, 2019</time>
+  </span>
+  <p>I mentioned in my <a href="/post/weeknotes-3/">weeknotes</a> that I&rsquo;ve been feeling rather conflicted recently regarding the state of modern front-end tooling, and common practices that seem to have become the status quo. Before I get into it, I&rsquo;ll preface by saying this: I&rsquo;m not anti-JS (I am primarily a JavaScript developer), and I&rsquo;m not anti-web. You could say I&rsquo;m that a bit of a <a href="https://en.wikipedia.org/wiki/Centrism">centrist</a> when it comes to this debate. I love React, Vue, TypeScript and all of the goodness that the last few years of web innovation has produced, but (imo) there&rsquo;s a large subset of developers who suffer from an extreme case of tunnel vision when it comes to discussing what it means to build for the web platform.</p>
+
+<p>My disenchantment began when I was tasked with building an admin panel for our support team at work. When I was choosing the tech stack (I&rsquo;m thankful to have this level of autonomy), I came up with a loose set of requirements:</p>
+
+<ul>
+<li>✅ Quick to build</li>
+<li>✅ Fast loading and functional</li>
+<li>✅ Easy to iterate and onboard new developers</li>
+<li>✅ Minimal time spent setting up tooling, build processes and dependencies</li>
+<li>✅ Technologies the team and I already know</li>
+<li>✅ No database interaction, it&rsquo;ll proxy our existing APIs</li>
+</ul>
+
+<p>I found it unnecessary to reinvent the wheel by setting up a React app from scratch, dealing with bloaty client-side authentication logic, setting up a router, spending hours choosing a way to write CSS (and panicking forever more that you&rsquo;ve chosen the &ldquo;wrong&rdquo; approach) and contemplating if I need state management or not. It&rsquo;s a whole load of cognitive overhead that I&rsquo;ve deemed a waste of time. This admin panel essentially does two things - <a href="https://www.trysmudford.com/blog/city-life/#products-apps-not-websites">renders a list, and a single item</a>. I landed on using Node.js, Express &amp; <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a>. A lovely, simple, server-rendered website with sessions, out-of-the-box routing, and all of the amazing features we seem to have forgotten come as standard when building &ldquo;traditional&rdquo; server applications.</p>
+
+<p>After years of working in SPA-land, rarely touching a server-rendered website, I was amazed at how quick it was to get up and running and start feeling productive right away. Developers are quick to extoll the virtues of tools like Create React App, and whilst I agree - they&rsquo;re great! It really takes a while to start <em>feeling</em> productive when setting up a new SPA from the ground up. So much non-work has to be done before the real work, what you&rsquo;re likely being <em>paid to do</em>, can begin.</p>
+
+<p>I had an admin panel with authentication, pages, routes, templates and CSS, flash messaging, The Works™️ set up in an afternoon. I hadn&rsquo;t felt this productive in years. But best of all, it was <em>fun</em>. Of course I still enjoy working with our modern, flashy tech stack - but this felt so different. No waiting for recompilation. No React devtools. No props and state flying around. No convoluted centralised state management. No worrying about loading states. Complete bliss. It was functional, it was fast, and it felt solid. The only thing I legitimately missed from a &ldquo;developer experience&rdquo; perspective was TypeScript. TypeScript is great, and gives me much more confidence when shipping code.</p>
+
+<p>I would urge front-end developers to take a step back, breathe, and reassess. Let&rsquo;s stop over engineering for the sake of it. Let&rsquo;s think what we can do with the basic tools, progressive enhancement and a simpler approach to building websites. There are absolutely valid usecases for SPAs, React, et al. and I&rsquo;ll continue to use these tools reguarly and when it&rsquo;s necessary, I&rsquo;m just not sure that&rsquo;s 100% of the time.</p>
+
+</article>
+
+<footer>
+  <div class="toggles">
+    <span class="label">Emoji Trail:
+    </span>
+
+    <label class="feature-toggle">
+      <input type="radio" name="emoji-toggle" value="on" class="emoji-toggle-on" checked="checked"/>
+      <span>On</span>
+    </label>
+
+    <label class="feature-toggle">
+      <input type="radio" name="emoji-toggle" value="off" class="emoji-toggle-off"/>
+      <span>Off</span>
+    </label>
+  </div>
+
+  <a href="https://twitter.com/timnovis">@timnovis</a>
+  //
+  <a href="mailto:tim@novis.co">tim@novis.co</a>
+</footer>
+</main>
+<script type="module" src="/js/main.mjs"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Tim Novis</title>
+    <link>/pages/</link>
+    <description>Recent content in Pages on Tim Novis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 17 Jun 2018 15:58:06 +0100</lastBuildDate>
+    
+	<atom:link href="/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sun, 17 Jun 2018 15:58:06 +0100</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Currently Financial Times // June 2019 - Present
+Software Engineer working on the consumer products team for FT.com
+Previously Daisie // Nov 2017 – June 2019
+Working across the stack, building a social platform for creative collaboration.
+ Built the v1 MVP with React Native &amp;amp; styled-components, integrating with a GraphQL backend, gathering 20,000+ downloads in the first 24 hours. Built a native extension with Objective-C to deal with system level libraries for image and video processing needs</description>
+    </item>
+    
+  </channel>
+</rss>
