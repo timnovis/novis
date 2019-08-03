@@ -1,0 +1,24 @@
+{{ .Scratch.Set "main_class" "article" }}
+{{ partial "header.html" . }}
+
+{{ partial "single-header.html" . }}
+
+<article>
+  <ul class="photos-list">
+    {{ range and (where .Site.Pages "Section" "==" "posts") }}
+      {{ if (in .Params.tags "photo") }}
+        <li>
+          <h2>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+          </h2>
+          <span class="time">Published
+            <time datetime="{{.Date }}">{{ .Date.Format "January 2, 2006"}}</time>
+          </span>
+          {{ .Content }}
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</article>
+
+{{ partial "footer.html" . }}

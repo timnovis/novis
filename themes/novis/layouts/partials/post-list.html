@@ -1,12 +1,14 @@
 <ul class="post-list">
-  {{ range where .Data.Pages "Section" "==" "posts" }}
-    <li>
-      <h2>
-        <a href="{{.Permalink}}">{{.Title}}</a>
-      </h2>
-      <span class="time">Published
-        <time datetime="{{.Date }}">{{ .Date.Format "January 2, 2006"}}</time>
-      </span>
-    </li>
+  {{ range and (where .Data.Pages "Section" "==" "posts") }}
+    {{ if not (in .Params.tags "photo") }}
+      <li>
+        <h2>
+          <a href="{{.Permalink}}">{{.Title}}</a>
+        </h2>
+        <span class="time">Published
+          <time datetime="{{.Date }}">{{ .Date.Format "January 2, 2006"}}</time>
+        </span>
+      </li>
+    {{ end }}
   {{ end }}
 </ul>

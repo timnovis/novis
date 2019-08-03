@@ -11,3 +11,5 @@ pygmentsCodeFencesGuessSyntax = true
 [mediaTypes]
   [mediaTypes."text/javascript"]
     suffixes = ["js", "mjs"]
+[taxonomies]
+  tag = "tags"
