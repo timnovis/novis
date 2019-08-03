@@ -24,7 +24,11 @@ exports.handler = async function(event, context) {
   }
 
   try {
-    const { image, caption, filename } = JSON.parse(body);
+    const { image, caption, filename, secret } = JSON.parse(body);
+
+    if (secret !== process.env.SECRET) {
+      throw new Error('Unauthorized');
+    }
 
     const id = `${filename}-${Date.now()}`;
 
