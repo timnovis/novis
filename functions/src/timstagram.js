@@ -60,7 +60,7 @@ exports.handler = async function(event, context) {
           path: `content/posts/image-${id}.md`,
           mode: '100644',
           type: 'blob',
-          content: postTemplate(caption, new Date().toISOString().slice(0, -14), id),
+          content: postTemplate(caption, new Date().toISOString(), id),
         },
       ],
       base_tree: branch.data.object.sha,
@@ -87,6 +87,9 @@ exports.handler = async function(event, context) {
       body: 'success',
     };
   } catch (e) {
+    console.log('========================');
+    console.log(e);
+    console.log('========================');
     return {
       statusCode: 400,
       body: e.toString(),
