@@ -6,10 +6,19 @@
     <description>Recent content in Pages on Tim Novis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 17 Jun 2018 15:58:06 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2019 15:58:00 +0100</lastBuildDate>
     
 	<atom:link href="/pages/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Photos</title>
+      <link>/photos/</link>
+      <pubDate>Sat, 03 Aug 2019 15:58:00 +0100</pubDate>
+      
+      <guid>/photos/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>About</title>
@@ -17,11 +26,12 @@
       <pubDate>Sun, 17 Jun 2018 15:58:06 +0100</pubDate>
       
       <guid>/about/</guid>
-      <description>Currently Financial Times // June 2019 - Present
-Software Engineer working on the consumer products team for FT.com
-Previously Daisie // Nov 2017 – June 2019
-Working across the stack, building a social platform for creative collaboration.
- Built the v1 MVP with React Native &amp;amp; styled-components, integrating with a GraphQL backend, gathering 20,000+ downloads in the first 24 hours. Built a native extension with Objective-C to deal with system level libraries for image and video processing needs</description>
+      <description>Financial Times // June 2019 - Present
+Software engineer working on FT.com
+ Worked alongside the FT&amp;rsquo;s data science team on a 6 week project to integrate a machine learning model into production using Java and VoltDB.
+ Led an integration with Cypress into one of the team&amp;rsquo;s core products and wrote tests to ensure we were shipping reliable software.
+ Helped to ship a new B2B signup experience.
+  Tech: Node.</description>
     </item>
     
   </channel>

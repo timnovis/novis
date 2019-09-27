@@ -4,13 +4,17 @@ date: 2018-06-17T15:58:06+01:00
 draft: false
 ---
 
-## Currently
-
 **[Financial Times](https://www.ft.com/) // June 2019 - Present**
 
-Software Engineer working on the consumer products team for FT.com
+Software engineer working on FT.com
 
-## Previously
+- Worked alongside the FT's data science team on a 6 week project to integrate a machine learning model into production using Java and VoltDB.
+
+- Led an integration with Cypress into one of the team's core products and wrote tests to ensure we were shipping reliable software.
+
+- Helped to ship a new B2B signup experience.
+
+Tech: Node.js, Express, TypeScript, SASS, Microservices, Jest, Cypress, CircleCI, Java 8, VoltDB
 
 **[Daisie](https://www.daisie.com/) // Nov 2017 – June 2019**
 

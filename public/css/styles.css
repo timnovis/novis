@@ -94,6 +94,30 @@ main.article {
   font-size: 18px;
 }
 
+.single-header h1 {
+  margin-top: 0;
+  font-size: 18px;
+  color: lavender;
+  opacity: 0.8;
+}
+
+.single-header h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-to-home {
+  opacity: 0.4;
+  color: lavender;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease all;
+}
+
+.back-to-home:hover {
+  opacity: 0.8;
+}
+
 footer {
   padding-top: 30px;
 }
@@ -143,7 +167,7 @@ footer .toggles {
 
 pre,
 code {
-  font-family: 'Liga Roboto Mono';
+  font-family: monospace;
   font-size: 0.95em;
 }
 
@@ -195,5 +219,9 @@ code {
   .home .home-col:last-child {
     border-bottom: 0;
     border-right: 0;
+  }
+
+  .toggles {
+    display: none;
   }
 }

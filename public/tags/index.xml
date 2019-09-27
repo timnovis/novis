@@ -6,9 +6,19 @@
     <description>Recent content in Tags on Tim Novis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
+    <lastBuildDate>Tue, 03 Sep 2019 17:39:11 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>photo</title>
+      <link>/tags/photo/</link>
+      <pubDate>Tue, 03 Sep 2019 17:39:11 +0000</pubDate>
+      
+      <guid>/tags/photo/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

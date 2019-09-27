@@ -3,15 +3,93 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/greengages/</loc>
+    <lastmod>2019-09-03T17:39:11+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/</loc>
-    <lastmod>2019-06-07T12:00:00+01:00</lastmod>
+    <lastmod>2019-09-03T17:39:11+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-09-03T17:39:11+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-06-07T12:00:00+01:00</lastmod>
+    <lastmod>2019-09-03T17:39:11+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/photo/</loc>
+    <lastmod>2019-09-03T17:39:11+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/peppermint/</loc>
+    <lastmod>2019-08-23T17:43:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/23-aug-2019-at-0922/</loc>
+    <lastmod>2019-08-23T08:22:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/21-aug-2019-at-2006/</loc>
+    <lastmod>2019-08-21T19:07:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/fennel-garlic-chilli-oil-burrata/</loc>
+    <lastmod>2019-08-19T18:45:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/took-a-trip-to-the-greengrocers/</loc>
+    <lastmod>2019-08-19T18:26:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/reclaiming-my-content-with-ios-shortcuts-and-lambdas/</loc>
+    <lastmod>2019-08-03T17:04:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/pages/</loc>
+    <lastmod>2019-08-03T15:58:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/photos/</loc>
+    <lastmod>2019-08-03T15:58:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/ran-into-wilf-on-the-victoria-line/</loc>
+    <lastmod>2019-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/sky/</loc>
+    <lastmod>2019-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/wild-rice-zaatar-halloumi-nectarines-mint/</loc>
+    <lastmod>2019-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/weeknotes-6/</loc>
+    <lastmod>2019-07-25T18:35:16+01:00</lastmod>
   </url>
   
   <url>
@@ -52,32 +130,6 @@
   <url>
     <loc>/about/</loc>
     <lastmod>2018-06-17T15:58:06+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/pages/</loc>
-    <lastmod>2018-06-17T15:58:06+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/building-to-appcenter-from-gitlab/</loc>
-    <lastmod>2018-04-20T16:39:43+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/custom-aliases-in-react-native-with-babel/</loc>
-    <lastmod>2018-04-09T10:17:17+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

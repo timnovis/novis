@@ -6,10 +6,112 @@
     <description>Recent content in Posts on Tim Novis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 07 Jun 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2019 17:39:11 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Greengages</title>
+      <link>/post/greengages/</link>
+      <pubDate>Tue, 03 Sep 2019 17:39:11 +0000</pubDate>
+      
+      <guid>/post/greengages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>peppermint </title>
+      <link>/post/peppermint/</link>
+      <pubDate>Fri, 23 Aug 2019 17:43:48 +0000</pubDate>
+      
+      <guid>/post/peppermint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>23 Aug 2019 at 09:22</title>
+      <link>/post/23-aug-2019-at-0922/</link>
+      <pubDate>Fri, 23 Aug 2019 08:22:18 +0000</pubDate>
+      
+      <guid>/post/23-aug-2019-at-0922/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>21 Aug 2019 at 20:06</title>
+      <link>/post/21-aug-2019-at-2006/</link>
+      <pubDate>Wed, 21 Aug 2019 19:07:02 +0000</pubDate>
+      
+      <guid>/post/21-aug-2019-at-2006/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fennel, garlic, chilli, oil, burrata </title>
+      <link>/post/fennel-garlic-chilli-oil-burrata/</link>
+      <pubDate>Mon, 19 Aug 2019 18:45:37 +0000</pubDate>
+      
+      <guid>/post/fennel-garlic-chilli-oil-burrata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Took a trip to the greengrocers </title>
+      <link>/post/took-a-trip-to-the-greengrocers/</link>
+      <pubDate>Mon, 19 Aug 2019 18:26:23 +0000</pubDate>
+      
+      <guid>/post/took-a-trip-to-the-greengrocers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reclaiming my content with iOS Shortcuts and Lambdas</title>
+      <link>/post/reclaiming-my-content-with-ios-shortcuts-and-lambdas/</link>
+      <pubDate>Sat, 03 Aug 2019 17:04:25 +0100</pubDate>
+      
+      <guid>/post/reclaiming-my-content-with-ios-shortcuts-and-lambdas/</guid>
+      <description>Today I built a thing to allow me to get photos from my phone to this website without much manual intervention. I&amp;rsquo;ve dubbed it Timstagram.
+Check out Timstagram
+Why? There are photos on my iPhone I don&amp;rsquo;t really want to upload to Instagram.
+Part 1 - iOS Shortcut I created an iOS Shortcut to take a photo from my camera roll, and send it through some wires and oceans finally reaching my website.</description>
+    </item>
+    
+    <item>
+      <title>Ran into Wilf on the Victoria line </title>
+      <link>/post/ran-into-wilf-on-the-victoria-line/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ran-into-wilf-on-the-victoria-line/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sky</title>
+      <link>/post/sky/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/sky/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wild rice, za’atar, halloumi, nectarines, mint</title>
+      <link>/post/wild-rice-zaatar-halloumi-nectarines-mint/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/wild-rice-zaatar-halloumi-nectarines-mint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weeknotes 6</title>
+      <link>/post/weeknotes-6/</link>
+      <pubDate>Thu, 25 Jul 2019 18:35:16 +0100</pubDate>
+      
+      <guid>/post/weeknotes-6/</guid>
+      <description>Yet again, it&amp;rsquo;s been a rather long time since I last wrote anything here. That being said, I did update my website – and if you&amp;rsquo;re surfing using a device with a pointer (likely a computer) then you&amp;rsquo;ll notice a wonderful new emoji cursor trail. If it&amp;rsquo;s too distracting or otherwise unpleasant for you, there&amp;rsquo;s an option to turn this off at the bottom of the website. I used JavaScript modules natively in the browser using &amp;lt;script type=&amp;quot;module&amp;quot;&amp;gt; for the little JS that this website requires, and wow do I love the future.</description>
+    </item>
     
     <item>
       <title>Weeknotes 5</title>
@@ -81,28 +183,6 @@ So far this week at work, I&amp;rsquo;ve tied up a few loose ends on the API to 
       <guid>/post/weeknotes-0/</guid>
       <description>I&amp;rsquo;ve been on holiday in Japan for ~2 weeks. It&amp;rsquo;s the longest break I&amp;rsquo;ve taken in quite a while, and I&amp;rsquo;m having a great time. I&amp;rsquo;ve certainly had a chance to reflect on the past two years of my life and career. It&amp;rsquo;s been great to take a step back and think.
 I brought my laptop with me &amp;ldquo;just in case&amp;rdquo;, but I&amp;rsquo;ve opened it twice in the time I&amp;rsquo;ve been here which has been, quite honestly, liberating.</description>
-    </item>
-    
-    <item>
-      <title>Building to AppCenter from GitLab</title>
-      <link>/post/building-to-appcenter-from-gitlab/</link>
-      <pubDate>Fri, 20 Apr 2018 16:39:43 +0100</pubDate>
-      
-      <guid>/post/building-to-appcenter-from-gitlab/</guid>
-      <description>When I initially found out about AppCenter.ms, I was really excited to start using it, until, to my disappointment, I found that there was no support for GitLab. I didn&amp;rsquo;t stop there though!
-I knew in order to get this working I&amp;rsquo;d have to use one of AppCenter&amp;rsquo;s supported git integrations, GitHub, BitBucket or VSTS. I knew I could mirror the repository from GitLab to one of these providers, and the most cost effective option seemed to be BitBucket as they have a great free plan for teams which allows private repositories.</description>
-    </item>
-    
-    <item>
-      <title>Custom Aliases in React Native with Babel</title>
-      <link>/post/custom-aliases-in-react-native-with-babel/</link>
-      <pubDate>Mon, 09 Apr 2018 10:17:17 +0100</pubDate>
-      
-      <guid>/post/custom-aliases-in-react-native-with-babel/</guid>
-      <description>Is there anything more infuriating than diving into a JavaScript project to find this?
-import Component from &amp;#39;../../../some/deeply/ambiguous/location&amp;#39;;  Imagine if we could just import Component from &#39;myAlias/component&#39;; from anywhere in the codebase!
-It&amp;rsquo;s super easy to set up - and there are a few ways to achieve it too.
-1. With .babelrc If your project doesn&amp;rsquo;t use Webpack - for example if you&amp;rsquo;re working with React Native, you can use your .</description>
     </item>
     
   </channel>

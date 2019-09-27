@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reclaiming my content with iOS Shortcuts and Lambdas
+    
+    -
+    Tim Novis
+    
+  </title>
+  <meta name="description"
+    content=" Today I built a thing to allow me to get photos from my phone to this website without much manual intervention. I&amp;rsquo;ve dubbed it Timstagram.
+Check out Timstagram
+Why? There are photos on my iPhone I don&amp;rsquo;t really want to upload to Instagram.
+Part 1 - iOS Shortcut I created an iOS Shortcut to take a photo from my camera roll, and send it through some wires and oceans finally reaching my website. ">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description"
+    content=" Today I built a thing to allow me to get photos from my phone to this website without much manual intervention. I&amp;rsquo;ve dubbed it Timstagram.
+Check out Timstagram
+Why? There are photos on my iPhone I don&amp;rsquo;t really want to upload to Instagram.
+Part 1 - iOS Shortcut I created an iOS Shortcut to take a photo from my camera roll, and send it through some wires and oceans finally reaching my website. " />
+  <meta name="twitter:title"
+    content="Reclaiming my content with iOS Shortcuts and Lambdas - Tim Novis" />
+  <meta name="twitter:site" content="@timnovis" />
+  <meta name="twitter:creator" content="@timnovis" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/syntax.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+  <main class="article">
+
+<header class="single-header">
+  <h1>
+    <a href="/">Tim Novis</a>
+  </h1>
+  <a href="/" class="back-to-home">&#8592; Back to homepage</a>
+</header>
+
+<article>
+  <header>
+    <h1>Reclaiming my content with iOS Shortcuts and Lambdas</h1>
+    <span class="time">Published
+      <time datetime="2019-08-03 17:04:25 &#43;0100 BST">August 3, 2019</time>
+    </span>
+  </header>
+  
+
+<p>Today I built a thing to allow me to get photos from my phone to this website without much manual intervention. I&rsquo;ve dubbed it Timstagram.</p>
+
+<p><a href="https://www.novis.co/photos/">Check out Timstagram</a></p>
+
+<h3 id="why">Why?</h3>
+
+<p>There are photos on my iPhone I don&rsquo;t really want to upload to Instagram.</p>
+
+<h4 id="part-1-ios-shortcut">Part 1 - iOS Shortcut</h4>
+
+<p>I created an <a href="https://support.apple.com/en-gb/guide/shortcuts/welcome/ios">iOS Shortcut</a> to take a photo from my camera roll, and send it through some wires and oceans finally reaching my website.</p>
+
+<p>I hadn&rsquo;t really explored Shortcuts too much since their release but I&rsquo;m suitably impressed and already I&rsquo;m thinking of all the things I can do with them going forward. The shortcut is too large to screenshot in its entirety, but it does a few things:</p>
+
+<ul>
+<li>✅ Prompts me for a photo from my camera roll</li>
+<li>✅ Does a bunch of transformations on it, eventually ending up as base64</li>
+<li>✅ Asks me for a caption</li>
+<li>✅ Beams that juicy info up to my remote function</li>
+<li>✅ Shows a local success or failure notification</li>
+</ul>
+
+<p><em>Not the whole configuration, but the good bits:</em></p>
+
+<p><img style="max-width: 45%" src="/media/misc/shortcut-1.PNG" alt="iOS Shortcut Configuration 1">
+<img style="max-width: 45%" src="/media/misc/shortcut-3.jpg" alt="iOS Shortcut Configuration 2"></p>
+
+<h4 id="part-2-netlify-function">Part 2 - Netlify Function</h4>
+
+<p>At this point in time, this website is built with <a href="https://gohugo.io/">Hugo</a> - meaning it&rsquo;s basically a bunch of static HTML files. It&rsquo;s also hosted on Netlify, meaning I&rsquo;m able to take advantage of Netlify Functions.</p>
+
+<p>I built an endpoint (a lambda if we&rsquo;re being fancy) to process the information from the shortcut, and commit a blog post to my blog posts repo using GitHub&rsquo;s API.</p>
+
+<p>What this means is: each time I want to upload a photo to this website, I essentially have to make a code change and add the image as a blob to the repo, and re-deploy the website on Netlify for it to appear.</p>
+
+<p><a href="https://github.com/timnovis/novis/blob/master/functions/src/timstagram.js">Check out the code for the function here</a></p>
+
+<h4 id="part-3-the-future">Part 3 - The Future?</h4>
+
+<p>I really like the idea of reclaiming ownership over my content, and I&rsquo;m hoping to push forward with it and start using this website as a place to keep things as well as on the large centralised social networks. Perhaps I&rsquo;ll start looking at integrating some IndieWeb stuff here at some point too.</p>
+
+<p>👋</p>
+
+</article>
+
+<footer>
+  <div class="toggles">
+    <span class="label">Emoji Trail:
+    </span>
+
+    <label class="feature-toggle">
+      <input type="radio" name="emoji-toggle" value="on" class="emoji-toggle-on" checked="checked"/>
+      <span>On</span>
+    </label>
+
+    <label class="feature-toggle">
+      <input type="radio" name="emoji-toggle" value="off" class="emoji-toggle-off"/>
+      <span>Off</span>
+    </label>
+  </div>
+
+  <a href="https://twitter.com/timnovis">@timnovis</a>
+  //
+  <a href="mailto:tim@novis.co">tim@novis.co</a>
+</footer>
+</main>
+<script type="module" src="/js/main.mjs"></script>
+</body>
+
+</html>
