@@ -4,7 +4,11 @@ date: 2018-06-17T15:58:06+01:00
 draft: false
 ---
 
-**[Financial Times](https://www.ft.com/) // June 2019 - Present**
+**[DICE](https://dice.fm/) // Nov 2019 - Present**
+
+Senior Software Engineer, working on front-end
+
+**[Financial Times](https://www.ft.com/) // June 2019 - Nov 2019**
 
 Software engineer working on FT.com
 
