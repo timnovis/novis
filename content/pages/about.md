@@ -4,7 +4,11 @@ date: 2018-06-17T15:58:06+01:00
 draft: false
 ---
 
-**[DICE](https://dice.fm/) // Nov 2019 - Present**
+**[Depop](https://www.depop.com/) // April 2020 - Present**
+
+Senior Web Engineer
+
+**[DICE](https://dice.fm/) // Nov 2019 - April 2020**
 
 Senior Software Engineer, working on front-end
 
