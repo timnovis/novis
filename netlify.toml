@@ -1,2 +1,7 @@
 [build]
   functions = "./functions/dist"
+  command = "hugo --gc --minify"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.125.1"
