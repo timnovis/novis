@@ -1,135 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/post/greengages/</loc>
+    <loc>//localhost:1313/tags/photo/</loc>
+    <lastmod>2020-04-27T13:02:02+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2020-04-27T13:02:02+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2020-04-27T13:02:02+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2020-04-27T13:02:02+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/tree/</loc>
+    <lastmod>2020-04-27T13:02:02+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/greengages/</loc>
     <lastmod>2019-09-03T17:39:11+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2019-09-03T17:39:11+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-09-03T17:39:11+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-09-03T17:39:11+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/photo/</loc>
-    <lastmod>2019-09-03T17:39:11+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/peppermint/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/peppermint/</loc>
     <lastmod>2019-08-23T17:43:48+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/23-aug-2019-at-0922/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/23-aug-2019-at-0922/</loc>
     <lastmod>2019-08-23T08:22:18+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/21-aug-2019-at-2006/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/21-aug-2019-at-2006/</loc>
     <lastmod>2019-08-21T19:07:02+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/fennel-garlic-chilli-oil-burrata/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/fennel-garlic-chilli-oil-burrata/</loc>
     <lastmod>2019-08-19T18:45:37+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/took-a-trip-to-the-greengrocers/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/took-a-trip-to-the-greengrocers/</loc>
     <lastmod>2019-08-19T18:26:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/reclaiming-my-content-with-ios-shortcuts-and-lambdas/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/reclaiming-my-content-with-ios-shortcuts-and-lambdas/</loc>
     <lastmod>2019-08-03T17:04:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/pages/</loc>
+  </url><url>
+    <loc>//localhost:1313/pages/</loc>
     <lastmod>2019-08-03T15:58:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/photos/</loc>
+  </url><url>
+    <loc>//localhost:1313/photos/</loc>
     <lastmod>2019-08-03T15:58:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/ran-into-wilf-on-the-victoria-line/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/ran-into-wilf-on-the-victoria-line/</loc>
     <lastmod>2019-08-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/sky/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/sky/</loc>
     <lastmod>2019-08-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/wild-rice-zaatar-halloumi-nectarines-mint/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/wild-rice-zaatar-halloumi-nectarines-mint/</loc>
     <lastmod>2019-08-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/weeknotes-6/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/weeknotes-6/</loc>
     <lastmod>2019-07-25T18:35:16+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/weeknotes-5/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/weeknotes-5/</loc>
     <lastmod>2019-06-07T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/weeknotes-4/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/weeknotes-4/</loc>
     <lastmod>2019-04-22T22:01:27+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/disenchantment/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/disenchantment/</loc>
     <lastmod>2019-04-11T12:07:33+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/weeknotes-3/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/weeknotes-3/</loc>
     <lastmod>2019-04-10T22:19:14+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/weeknotes-2/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/weeknotes-2/</loc>
     <lastmod>2019-04-03T22:46:07+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/weeknotes-1/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/weeknotes-1/</loc>
     <lastmod>2019-03-26T21:02:36+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/weeknotes-0/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/weeknotes-0/</loc>
     <lastmod>2019-03-19T16:39:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
+  </url><url>
+    <loc>//localhost:1313/about/</loc>
     <lastmod>2018-06-17T15:58:06+01:00</lastmod>
   </url>
-  
 </urlset>

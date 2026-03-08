@@ -1,8 +1,5 @@
 [build]
   functions = "./functions/dist"
-  publish = "public"
 
-[context.production.environment]
-  HUGO_VERSION = "0.43"
-  HUGO_EXTENDED = "true"
-  HUGO_ENV = "production"
+[build.environment]
+  HUGO_VERSION = "0.152.2"
